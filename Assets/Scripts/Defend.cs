@@ -10,11 +10,6 @@ public class Defend : MonoBehaviour
     public float count = 0.5f;
 
     public float timer;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -37,9 +32,9 @@ public class Defend : MonoBehaviour
     }
     void Fire()
     {
-        GameObject bullet = Instantiate(bulletPref, bulletSpawn.position, bulletSpawn.rotation);
+            GameObject bullet = Instantiate(bulletPref, bulletSpawn.position, bulletSpawn.rotation);
 
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
-        Destroy(bullet, 2.0f);
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+            Destroy(bullet, 2.0f);
     }
 }

@@ -7,6 +7,7 @@ public class DefencePlacement : MonoBehaviour
     public Camera camera;
     public GameObject defencePref;
     RaycastHit hit;
+    public TowerHealth costs;
     
     // Use this for initialization
     void Start()
@@ -25,7 +26,7 @@ public class DefencePlacement : MonoBehaviour
             Vector3 objectHit = hit.point;
             if (Input.GetMouseButtonDown(0))
             {
-                Instantiate(defencePref, objectHit, transform.rotation);
+                    Instantiate(defencePref, objectHit, transform.rotation);
             }
         }
     }

@@ -97,6 +97,7 @@ MonoBehaviour:
   bulletSpawn: {fileID: 4730122804580852}
   target: {fileID: 0}
   count: 0.5
+  money: 0
   timer: 0
 --- !u!135 &135495985176747490
 SphereCollider:
